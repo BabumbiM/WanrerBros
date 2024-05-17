@@ -1,0 +1,131 @@
+.nav-link{
+    color: #fff;
+    transition: 0.3 ease;
+  }
+.navbar-nav {
+    margin: auto;
+  }
+  .nav-link:hover{
+    color:#ffffff;
+  }
+  .nav-item {
+    margin-right: 20px; 
+  }
+
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000 !important; /* Adjusted to black */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.logo img {
+    /* Change width and height */
+    width: 100px;
+    height: 100px;
+    opacity: 0.8;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  .logo img:hover {
+    transform: scale(1.1) rotate(45deg);
+  }
+
+/* Styles for movie categories */
+.movie-category {
+    margin-bottom: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent movies from wrapping to next line */
+}
+
+.movie-list {
+    display: inline-flex; /* Use inline-flex to keep movies in a single line */
+    gap: 20px; /* Added gap between movie items */
+}
+
+.movie-item {
+    width: 300px; /* Set a fixed width for each movie item */
+    background-color: #333; /* Adjusted to dark gray */
+    padding: 10px;
+    box-sizing: border-box; /* Added to include padding in width calculation */
+}
+
+.movie-item img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-item h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.movie-item p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.movie-item button {
+    background-color: #f00; /* Adjusted to red */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.movies-container{
+    max-width: 968px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.box .box-img{
+    width: 100%;
+    height: 270px;
+    cursor: pointer;
+}
+.box .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box .box-img img:hover{
+    transform: translateY(-10px);
+    transition: 0.2s all linear;
+}
+.box h3{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.box span{
+    font-size: 14px;
+}
+
+/* coming container  */
+.coming-container{
+    display: grid;
+    gap: 1rem;
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+.coming-container .box img:hover{
+    transform: translateY(0);
+}
+.coming-container .box img{
+    border-radius: 15px;
+}
+/* Footer styles */
+.footer {
+    text-align: center;
+    margin-bottom: 20px;
+}

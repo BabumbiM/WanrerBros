@@ -14,30 +14,22 @@
   margin-right: 20px; 
 }
 
-.logo{
-  font-size: 1.1rem;
-  font-weight: 600;
-  align-items: center;
-  color: var(--bg-color);
-  display: flex;
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
+.logo img {
+  width: 100px;
+  height: 100px;
+ 
+  display: block;
+  margin: 0 auto;
 }
 .bx{
   color: var(--main-color);
 }
 
-.logo img {
-  /* Change width and height */
-  width: 100px;
-  height: 100px;
-
-
-  /* Change opacity */
- 
-  display: block;
-  margin: 0 auto;
- 
-}
 .heading{
   max-width: 968px;
   margin-left: auto;
@@ -68,8 +60,8 @@
   object-fit: cover;
 }
 .box .box-img img:hover{
-  transform: translateY(-10px);
-  transition: 0.2s all linear;
+  margin: 0 30px;
+  opacity: 0.5;
 }
 .box h3{
   font-size: 0.9rem;
@@ -92,19 +84,6 @@
   align-items: center;
   column-gap: 0.5rem;
 }
-.social .bx{
-  background: var(--bg-color);
-  padding: 2px;
-  font-size: 2rem;
-  border-radius: 50%;
-  border: 4px solid rgb(2, 3, 7,0.4);
-  color: var(--main-color);
-}
-.social .bx:hover{
-  background: var(--main-color);
-  color: var(--bg-color);
-  transition: 0.2s all linear;
-}
 
 .copyright{
   padding: 20px;
@@ -122,28 +101,10 @@ body {
   padding: 0;
 }
 
-/* Additional styles for navigation */
-.logo img {
-  /* Change width and height */
-  width: 100px;
-  height: 100px;
-
-
-  /* Change opacity */
-  opacity: 0.8;
-  display: block;
-  margin: 0 auto;
-  transition: transform 0.3s ease-in-out;
-}
-.logo img:hover {
-  transform: scale(1.1) rotate(45deg);
-}
-
-/* Styles for movie categories */
 .movie-category {
   margin-bottom: 20px;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Prevent movies from wrapping to next line */
+  overflow-x: auto; 
+  
 }
 
 .movie-list {
@@ -173,20 +134,7 @@ body {
   line-height: 1.4;
 }
 
-.movie-item button {
-  background-color: #f00; /* Adjusted to red */
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
 
-.movie-item button:hover {
-  background-color: #c00; /* Adjusted to darker red on hover */
-}
-
-/* Footer styles */
 .footer {
   text-align: center;
   margin-bottom: 20px;
@@ -208,11 +156,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-.social_box img:hover {
-  transform: scale(1.2);
-}
-
-/* Additional styles for movie cards */
 .movie-item {
   width: auto; /* Remove fixed width */
 }
@@ -298,13 +241,52 @@ body {
 }
 
 .movie-item .card:hover .card-body {
-  bottom: -50px; /* Slide up on hover */
+  bottom: -50px; /
 }
-/* Global styles */
+
 body {
 font-family: Arial, sans-serif;
 background-color: #000 !important; /* Adjusted to black */
 color: #fff;
 margin: 0;
 padding: 0;
+}
+.feedback-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3b3b3b;
+  color: #fff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: rgb(40, 39, 39);
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
